@@ -1,0 +1,61 @@
+body {
+	background-color: black;
+	margin: 0;
+    padding: 0;
+}
+
+html, body, main{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#menu ul{
+	padding: 10px;
+	margin: 0px;
+	list-style: none;
+	position: fixed;
+}
+
+#menu ul li {
+	display: flex;
+	margin: 3px;
+	align-items: center;
+	justify-content: center;
+	width: 70px;
+	height: 70px;
+	background-color: #1C1C1C;
+	border-radius: 50%;
+}
+
+#menu ul li:hover {
+	border: 2px solid white;
+}
+
+.logos {
+	width: 50px;
+}
+
+iframe {
+	border: 0;
+	width: 100%;
+    height: 99%;
+}
+
+#menu ul li ul{
+	position: absolute;
+	left: 80px;
+	display: none;
+}
+
+#menu li:hover ul, #menu li.over ul{
+	display: block;
+}
+
+.alternativa {
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	font: 15px Verdana;
+	font-weight: bold;
+}
