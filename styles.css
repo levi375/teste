@@ -11,13 +11,17 @@ html, body, main{
 }
 
 #menu ul{
+	list-style: none;
+	display: inline-flex;
+	width: 100%;
 	padding: 10px;
 	margin: 0px;
-	list-style: none;
 	position: fixed;
+	align-items: center;
+	justify-content: center;
 }
 
-#menu ul li {
+#menu ul li , a{
 	display: flex;
 	margin: 3px;
 	align-items: center;
@@ -26,10 +30,11 @@ html, body, main{
 	height: 70px;
 	background-color: #1C1C1C;
 	border-radius: 50%;
+	opacity: 95%;
 }
 
 #menu ul li:hover {
-	border: 2px solid white;
+	opacity: 100%;
 }
 
 .logos {
@@ -42,14 +47,23 @@ iframe {
     height: 99%;
 }
 
-#menu ul li ul{
-	position: absolute;
-	left: 80px;
+#menu ul li ul{ 
 	display: none;
+	width: 50px;
 }
 
 #menu li:hover ul, #menu li.over ul{
-	display: block;
+	
+}
+
+#sportv:hover ul{
+	display: grid;
+	padding-top: 315px;
+}
+
+#ufc:hover ul{
+	display: grid;
+	padding-top: 240px;
 }
 
 .alternativa {
