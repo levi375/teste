@@ -1,16 +1,16 @@
 body {
 	background-color: black;
 	margin: 0;
-    padding: 0;
+	padding: 0;
 }
 
-html, body, main{
+html, body, main {
     margin: 0;
     width: 100%;
     height: 100%;
 }
 
-#menu ul{
+#menu ul {
 	list-style: none;
 	display: inline-flex;
 	width: 100%;
@@ -21,7 +21,7 @@ html, body, main{
 	justify-content: center;
 }
 
-#menu ul li , a{
+#menu ul li , a {
 	display: flex;
 	margin: 3px;
 	align-items: center;
@@ -44,24 +44,23 @@ html, body, main{
 iframe {
 	border: 0;
 	width: 100%;
-    height: 99%;
+	height: 99%;
 }
 
-#menu ul li ul{ 
+#menu ul li ul { 
 	display: none;
 	width: 50px;
 }
 
-#menu li:hover ul, #menu li.over ul{
-	
+#menu li:hover ul, #menu li.over ul {
 }
 
-#sportv:hover ul{
+#sportv:hover ul {
 	display: grid;
 	padding-top: 315px;
 }
 
-#ufc:hover ul{
+#ufc:hover ul {
 	display: grid;
 	padding-top: 240px;
 }
