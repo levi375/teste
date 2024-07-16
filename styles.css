@@ -1,16 +1,16 @@
 body {
 	background-color: black;
 	margin: 0;
-	padding: 0;
+    padding: 0;
 }
 
-html, body, main {
+html, body{
     margin: 0;
     width: 100%;
     height: 100%;
 }
 
-#menu ul {
+#menu ul{
 	list-style: none;
 	display: inline-flex;
 	width: 100%;
@@ -21,7 +21,7 @@ html, body, main {
 	justify-content: center;
 }
 
-#menu ul li , a {
+#menu ul li , a{
 	display: flex;
 	margin: 3px;
 	align-items: center;
@@ -41,27 +41,23 @@ html, body, main {
 	width: 50px;
 }
 
-iframe {
-	border: 0;
-	width: 100%;
-	height: 99%;
-}
-
-#menu ul li ul { 
+#menu ul li ul{ 
 	display: none;
-	width: 50px;
 }
 
-#menu li:hover ul, #menu li.over ul {
+#menu li:hover ul, #menu li.over ul{
+	
 }
 
-#sportv:hover ul {
+#sportv:hover ul{
 	display: grid;
+	width: 50px;
 	padding-top: 315px;
 }
 
-#ufc:hover ul {
+#ufc:hover ul{
 	display: grid;
+	width: 50px;
 	padding-top: 240px;
 }
 
@@ -71,4 +67,38 @@ iframe {
 	color: white;
 	font: 15px Verdana;
 	font-weight: bold;
+}
+
+main {
+	display: flex;
+	padding-top: 95px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+body main div {
+	display: flex;
+	height: 400px;
+	width: 50%;
+	background-color: #1C1C1C;
+	border-radius: 5%;
+}
+
+iframe {
+	border: 0;
+	width: 100%;
+	border-radius: 5%;
+}
+
+footer div{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-top: 10px;
+}
+
+footer div img {
+	height: 70px;
 }
