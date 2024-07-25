@@ -1,0 +1,127 @@
+body {
+	background-color: black;
+	margin: 0;
+    padding: 0;
+}
+
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 98%;
+}
+
+#menu div ul{
+	list-style: none;
+	width: 98%;
+	margin: 0px;
+	padding: 10px;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+}
+
+#menu div ul li , a{
+	display: flex;
+	margin: 3px;
+	align-items: center;
+	justify-content: center;
+	width: 70px;
+	height: 70px;
+	background-color: #1C1C1C;
+	border-radius: 50%;
+	opacity: 95%;
+}
+
+#menu div ul li:hover {
+	opacity: 100%;
+}
+
+.logos {
+	width: 50px;
+}
+
+#menu div ul li ul{   /*submenu*/
+	display: none;
+}
+
+#menu li:hover ul, #menu li.over ul{
+	
+}
+
+#sportv:hover ul {                     /*3 canais*/
+	display: grid;
+	width: 50px;
+	padding-top: 315px;
+}
+
+#comedy-central:hover ul, #star-channel:hover ul, #tnt:hover ul, #ufc:hover ul{              /*2 canais*/
+	display: grid;
+	width: 50px;
+	padding-top: 240px;
+}
+
+.alternativa {
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	font: 15px Verdana;
+	font-weight: bold;
+}
+
+main {
+	height: 70%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+body main div {
+	display: flex;
+	height: 100%;
+	width: 90%;
+	background-color: #1C1C1C;
+	border-radius: 50px;
+}
+
+iframe {
+	border: 2px solid white;
+	width: 100%;
+	border-radius: 50px;
+}
+
+footer{
+	margin-top: 10px;
+	height: 10%;
+	background-image: url("images/koyote.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:  contain;
+}
+
+.mais_canais {
+	text-decoration: none;
+	color: white;
+	font: 15px Verdana;
+	font-weight: bold;
+}
+
+#menu1 {
+	display: inline-flex;
+}
+
+#menu2 {
+	display: none;
+}
+
+.caixa {
+	width: 100%;
+	height: 100px;
+}
+
+button {
+	border: 0px;
+	background-color: black;
+	cursor: pointer;
+}
