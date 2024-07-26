@@ -27,12 +27,12 @@ html, body{
 	justify-content: center;
 	width: 70px;
 	height: 70px;
-	background-color: #1C1C1C;
+	background: linear-gradient(to left top, yellow, red, blue);
 	border-radius: 50%;
-	opacity: 95%;
+	opacity: 80%;
 }
 
-#menu div ul li:hover {
+#menu div ul li:hover, a:hover {
 	opacity: 100%;
 }
 
@@ -80,9 +80,7 @@ main {
 body main div {
 	display: flex;
 	height: 100%;
-	width: 90%;
-	background-color: black;
-	border-radius: 50px;
+	width: 80%;
 }
 
 iframe {
@@ -92,19 +90,13 @@ iframe {
 }
 
 footer{
-	margin-top: 10px;
+	margin-top: 20px;
 	height: 10%;
 	background-image: url("images/koyote.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size:  contain;
-}
-
-.mais_canais {
-	text-decoration: none;
-	color: white;
-	font: 15px Verdana;
-	font-weight: bold;
+	opacity: 50%;
 }
 
 #menu1 {
@@ -124,4 +116,24 @@ button {
 	border: 0px;
 	background-color: black;
 	cursor: pointer;
+}
+
+.teste{
+	position: fixed;
+	display: flex;
+	height: 100%;
+	width: 100px;
+	background: linear-gradient(90deg, yellow, red, black);
+	opacity: 20%;
+}
+
+.teste1{
+	right:0;
+	position: fixed;
+	display: flex;
+	height: 100%;
+	width: 100px;
+	background: linear-gradient(90deg, black, red, yellow);
+	opacity: 20%;
+	
 }
