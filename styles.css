@@ -28,7 +28,6 @@ main {
 .menu-container {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	position: absolute;
 	width: 100%;
 	top: 0;
@@ -36,7 +35,7 @@ main {
 
 .menu-wrapper {
 	display: flex;
-	height: 280px;
+	height: 260px;
 	width: 480px;
 	overflow-x: hidden;
 }
@@ -100,7 +99,9 @@ main {
 }
 
 .menu-container button {
-	margin-bottom: 180px;
+	align-self: flex-start;
+	margin: 37px 0 0 0;
+	padding: 0;
 	border: 0;
 	background-color: transparent;
 	cursor: pointer;
@@ -123,25 +124,33 @@ iframe {
 	display: flex;
 	height: 100%;
 	width: 100px;
-	background: linear-gradient(90deg, yellow, red, black);
 	opacity: 20%;
 	top: 0;
+	transition: 0.5s ease;
 }
 
+.fundo-lateral-1{
+	background: linear-gradient(90deg, yellow, red, transparent);
+}
 .fundo-lateral-2{
 	right: 0;
-	background: linear-gradient(90deg, black, red, yellow);
+	background: linear-gradient(90deg, transparent, red, yellow);
+}
+
+span {
+	animation-duration: 3s;
+	animation-name: deslizar;
+}
+
+@keyframes deslizar {
+	from {
+		width: 50%;
+		opacity: 50%;
+		
+	}
 	
-}
-
-
-footer {
-	width: 100%;
-	margin-top: 10px;
-	height: 8%;
-	opacity: 50%;
-	color: white;
-	align-content: center;
-	align-items: center;
-	text-align: center;
-}
+	to {
+		width: 100px;
+		opacity: 20%;
+	}
+}	
