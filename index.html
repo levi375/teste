@@ -2,24 +2,22 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8">
-	<link rel="stylesheet" href="styles.css"
+	<link rel="stylesheet" href="styles.css">
 	<link rel="shortcut icon" href="images/icon.jpg">
     <title>Canais Favoritos</title>   
   </head>
   
   <body>
 		<header></header>
-		<span class="teste"></span>
-		<span class="teste1"></span>
 		
-		<nav id="menu">
+		<nav class="menu-container">
 		
-			<div class="caixa">
+			<button onclick="esquerda()"><img src="images/buttons/esquerda.svg"></button>
+		
+			<div class="menu-wrapper">
 			
-					<ul id="menu1">	
+					<ul class="menu">	
 					
-						<button onclick="f2()"><img src="images/buttons/esquerda.svg"></button>
-
 						<li>
 							<a title="CNN Brasil" href="https://embedmax.site/tvl/cnnbrasil.php" target="canais">
 								<img class="logos" src="images/logos/cnn-brasil.png" alt="">
@@ -38,28 +36,28 @@
 							</a>
 						</li>
 	
-						<li id="star-channel">
+						<li class="submenu">
 							<img class="logos" src="images/logos/star-channel.png" alt="">
 							<ul>
 								<li>
-									<a class="alternativa" title="Star Channel 1" href="https://embedmax.site/tvl/starchannel.php" target="canais">1</a>
+									<a title="Star Channel 1" href="https://embedmax.site/tvl/starchannel.php" target="canais">1</a>
 								</li>			
 
 								<li>
-									<a class="alternativa" title="Star Channel 2" href="https://embedmax.site/tvl/starchannel2.php" target="canais">2</a>
+									<a title="Star Channel 2" href="https://embedmax.site/tvl/starchannel2.php" target="canais">2</a>
 								</li>
 							</ul>
 						</li>
 						
-						<li id="tnt">											
+						<li class="submenu">											
 							<img class="logos" src="images/logos/tnt.png" alt="">
 							<ul>
 								<li>
-									<a class="alternativa" title="TNT 1" href="https://embedmax.site/tvl/tnt.php" target="canais">1</a>
+									<a title="TNT 1" href="https://embedmax.site/tvl/tnt.php" target="canais">1</a>
 								</li>
 								
 								<li>
-									<a class="alternativa" title="TNT 2" href="https://embedmax.site/tvl/tnt2.php" target="canais">2</a>
+									<a title="TNT 2" href="https://embedmax.site/tvl/tnt2.php" target="canais">2</a>
 								</li>	
 							</ul>
 						</li>
@@ -69,15 +67,7 @@
 								<img class="logos" src="images/logos/megapix.png" alt="">
 							</a>
 						</li>	
-							
-						<button onclick="f1()"><img src="images/buttons/direita.svg"></button>
-						
-					</ul>
-
-					<ul id="menu2">
-					
-						<button onclick="f2()"><img src="images/buttons/esquerda.svg"></button>						
-						
+																	
 						<li>
 							<a title="FX" href="https://embedmax.site/tvl/fx.php" target="canais">
 								<img class="logos" src="images/logos/fx.png" alt="">
@@ -90,20 +80,20 @@
 							</a>
 						</li>
 						
-						<li id="comedy-central">
+						<li class="submenu">
 							<img class="logos" src="images/logos/comedy-central.png" alt="">
 							<ul>
 								<li>
-									<a class="alternativa" "title="Comedy Central 1" href="https://embedmax.site/tvl/comedycentral.php" target="canais">1</a>
+									<a "title="Comedy Central 1" href="https://embedmax.site/tvl/comedycentral.php" target="canais">1</a>
 								</li>
 								
 								<li>
-									<a class="alternativa" title="Comedy Central 2" href="https://embedmax.site/tvl/comedycentral2.php" target="canais">2</a>
+									<a title="Comedy Central 2" href="https://embedmax.site/tvl/comedycentral2.php" target="canais">2</a>
 								</li>	
 							</ul>		
 						</li>						
 						
-						<li id="sportv">
+						<li class="submenu">
 							<img class="logos" src="images/logos/sportv.png" alt="">
 							<ul>
 								<li>
@@ -116,11 +106,7 @@
 										<img class="logos" src="images/logos/sportv2.png" alt="">
 									</a>
 								</li>
-								<li>
-									<a title="Sportv3" href="https://embedmax.site/tvl/sportv3.php" target="canais">
-										<img class="logos" src="images/logos/sportv3.png" alt="">
-									</a>
-								</li>
+								
 							</ul>
 						</li>
 						
@@ -130,34 +116,38 @@
 							</a>
 						</li>							
 	
-						<li id="ufc">
+						<li class="submenu">
 							<img class="logos" src="images/logos/ufcfightpass.png" alt="">
 							<ul>
 								<li>
-									<a class="alternativa" title="UFC Fight Pass 1" href="https://embedmax.site/tvl/ufcfightpass.php" target="canais">1</a>
+									<a title="UFC Fight Pass 1" href="https://embedmax.site/tvl/ufcfightpass.php" target="canais">1</a>
 								</li>
 								<li>
-									<a class="alternativa" title="UFC Fight Pass 2" href="https://reidoscanais.eu/embed/?id=ufcfightpass" target="canais">2</a>
+									<a title="UFC Fight Pass 2" href="https://reidoscanais.eu/embed/?id=ufcfightpass" target="canais">2</a>
 								</li>
 							</ul>
-						</li>	
-	
-						<button onclick="f1()"><img src="images/buttons/direita.svg"></button>
+						</li>					
+									
 					</ul>
 
 			</div>
+			
+			<button onclick="direita()"><img src="images/buttons/direita.svg"></button>
 
 		</nav>
 		
+		<span class="fundo-lateral-1"></span>
+		
 		<main>
-			<div>
+			<div class="player">
 				<iframe name="canais"src="https://embedmax.site/tvl/globoRJ.php" allowfullscreen></iframe>
 			</div>
 		</main>
 		
 		<footer>
-			<p>Website created for educational purposes.</p>
 		</footer>
+		
+		<span class="fundo-lateral-2"></span>
 	</body>
 	<script src="scripts/main.js"></script>
 </html>
