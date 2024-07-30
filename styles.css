@@ -1,83 +1,112 @@
-body {
-	background-color: black;
+html,body, main{
 	margin: 0;
 	padding: 0;
+	width: 100%;
+	height: 94%;
+	background-color: black;
 }
 
-html, body{
-    margin: 0;
-    width: 100%;
-    height: 98%;
-}
-
-#menu div ul{
-	list-style: none;
-	width: 98%;
-	margin: 0px;
-	padding: 10px;
-	align-items: center;
+body {
+	display: block;
 	justify-content: center;
-	position: absolute;
+	align-items: center;
 }
 
-#menu div ul li , a{
+main {
 	display: flex;
-	margin: 3px;
-	align-items: center;
+	padding: 0;
+	margin: 49px 0 0 ;
+	background-color: black;
 	justify-content: center;
-	width: 70px;
-	height: 70px;
-	background: linear-gradient(to left top, yellow, red, blue);
-	border-radius: 50%;
-	opacity: 80%;
-}
-
-#menu div ul li:hover, a:hover {
-	opacity: 100%;
+	
 }
 
 .logos {
 	width: 50px;
 }
 
-#menu div ul li ul{   /*submenu*/
-	display: none;
+.menu-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	top: 0;
 }
 
-#menu li:hover ul, #menu li.over ul{
-	
+.menu-wrapper {
+	display: flex;
+	height: 280px;
+	width: 480px;
+	overflow-x: hidden;
 }
 
-#sportv:hover ul {                     /*3 canais*/
-	display: grid;
-	width: 50px;
-	padding-top: 315px;
+.menu {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	height: 100px;
+	padding: 0;
+	margin: 0;
+	transition: 1s ease;
+	margin: 0 0 0 5px;
 }
 
-#comedy-central:hover ul, #star-channel:hover ul, #tnt:hover ul, #ufc:hover ul{              /*2 canais*/
-	display: grid;
-	width: 50px;
-	padding-top: 240px;
+.menu li, .menu a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	background: linear-gradient(to left top, yellow, red, blue);
+	height: 70px;
+	margin-right: 10px;
+	border-radius: 50%;
+	position: relative;
+	opacity: 95%;
 }
 
-.alternativa {
+.menu a {
+	margin-right: 0px;
 	text-decoration: none;
-	text-align: center;
 	color: white;
+	text-align: center;
 	font: 15px Verdana;
 	font-weight: bold;
 }
 
-main {
-	height: 70%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
+.menu li:hover, .menu a:hover, .menu-container button:hover{
+	opacity: 100%;
+	transform: scale(1.02);
+	transition: 0.5s ease;
 }
 
-body main div {
+.submenu ul{
+	display: none;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	top: 100%;
+	left: 0;
+	padding: 10px 0 0;
+	z-index: 1000;
+}
+
+.submenu:hover ul{
+	display: block;
+}
+
+.submenu ul li{
+	margin-bottom: 10px;
+}
+
+.menu-container button {
+	margin-bottom: 180px;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.player {
 	display: flex;
 	height: 100%;
 	width: 80%;
@@ -89,55 +118,30 @@ iframe {
 	border-radius: 50px;
 }
 
-footer{
-	margin-top: 20px;
-	height: 10%;
-	background-image: url("images/koyote.png");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size:  contain;
-	opacity: 50%;
-	color: white;
-	align-content: center;
-	align-items: center;
-	padding-left: 10%;
-}
-
-#menu1 {
-	display: inline-flex;
-}
-
-#menu2 {
-	display: none;
-}
-
-.caixa {
-	width: 100%;
-	height: 100px;
-}
-
-button {
-	border: 0px;
-	background-color: transparent;
-	cursor: pointer;
-}
-
-.teste{
+.fundo-lateral-1, .fundo-lateral-2 {
 	position: fixed;
 	display: flex;
 	height: 100%;
 	width: 100px;
 	background: linear-gradient(90deg, yellow, red, black);
 	opacity: 20%;
+	top: 0;
 }
 
-.teste1{
-	right:0;
-	position: fixed;
-	display: flex;
-	height: 100%;
-	width: 100px;
+.fundo-lateral-2{
+	right: 0;
 	background: linear-gradient(90deg, black, red, yellow);
-	opacity: 20%;
 	
+}
+
+
+footer {
+	width: 100%;
+	margin-top: 10px;
+	height: 8%;
+	opacity: 50%;
+	color: white;
+	align-content: center;
+	align-items: center;
+	text-align: center;
 }
