@@ -154,3 +154,31 @@ span {
 		opacity: 20%;
 	}
 }	
+
+/*Celular Teste*/
+@media (max-width: 600px) {
+	
+	.fundo-lateral-1, .fundo-lateral-2 {
+		width: 30px;
+		z-index: 1;
+	}
+	
+	.menu-wrapper {
+		width: 320px;
+	}
+	
+	.menu-container button {
+		z-index: 999;
+	}
+	
+	@keyframes deslizar {
+	from {
+		width: 50%;
+		
+	}
+	
+	to {
+		width: 30px;
+	}
+}	
+}
