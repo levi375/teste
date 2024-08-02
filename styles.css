@@ -172,13 +172,13 @@ span {
 	}
 	
 	@keyframes deslizar {
-	from {
-		width: 50%;
+		from {
+			width: 50%;
+			
+		}
 		
-	}
-	
-	to {
-		width: 30px;
-	}
-}	
+		to {
+			width: 30px;
+		}
+	}	
 }
