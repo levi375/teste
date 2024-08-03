@@ -108,7 +108,6 @@ a{
 	z-index: 100;
 	margin-top: -20px;
 	width: 100%;
-	margin-bottom: 10px;
 }
 
 iframe {
@@ -167,6 +166,10 @@ span {
 	
 	.menu-container button {
 		z-index: 999;
+	}
+
+	.player a {
+		width: 100px;
 	}
 	
 	@keyframes deslizar {
