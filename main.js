@@ -50,7 +50,7 @@ const canais = [
     { id: 'comedycentral', embedMax: 'comedycentral.php', reidosCanais: 'comedycentral' },
     { id: 'sportv1', embedMax: 'sportv1.php', reidosCanais: 'sportv' },
     { id: 'sportv2', embedMax: 'sportv2.php', reidosCanais: 'sportv2' },
-	{ id: 'sportv3', embedMax: 'sportv3.php', reidosCanais: 'sportv3' },
+    { id: 'sportv3', embedMax: 'sportv3.php', reidosCanais: 'sportv3' },
     { id: 'animalplanet', embedMax: 'animalplanet.php', reidosCanais: 'animalplanet' },
     { id: 'ufcfightpass', embedMax: 'ufcfightpass.php', reidosCanais: 'ufcfightpass' },
 ];
