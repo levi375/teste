@@ -8,8 +8,6 @@ html,body, main{
 
 body {
 	display: block;
-	justify-content: center;
-	align-items: center;
 }
 
 main {
@@ -18,7 +16,7 @@ main {
 	margin: 49px 0 0 ;
 	background-color: black;
 	justify-content: center;
-	
+	align-items: center;
 }
 
 .logos {
@@ -35,9 +33,8 @@ main {
 
 .menu-wrapper {
 	display: flex;
-	height: 260px;
-	width: 480px;
-	overflow-x: hidden;
+	width: 560px;
+	overflow: hidden;
 }
 
 .menu {
@@ -51,7 +48,7 @@ main {
 	margin: 0 0 0 5px;
 }
 
-.menu li, .menu a{
+.menu li, a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -64,7 +61,7 @@ main {
 	opacity: 95%;
 }
 
-.menu a {
+a{
 	margin-right: 0px;
 	text-decoration: none;
 	color: white;
@@ -79,25 +76,6 @@ main {
 	transition: 0.5s ease;
 }
 
-.submenu ul{
-	display: none;
-	position: absolute;
-	padding: 0;
-	margin: 0;
-	top: 100%;
-	left: 0;
-	padding: 10px 0 0;
-	z-index: 1000;
-}
-
-.submenu:hover ul{
-	display: block;
-}
-
-.submenu ul li{
-	margin-bottom: 10px;
-}
-
 .menu-container button {
 	align-self: flex-start;
 	margin: 37px 0 0 0;
@@ -108,14 +86,33 @@ main {
 }
 
 .player {
-	display: flex;
 	height: 100%;
 	width: 80%;
+}
+
+.player a{
+	height: 30px;
+	width: 150px;
+	border-radius: 50px;
+	margin-right: 10px;
+	
+}
+
+.opções {
+	position: relative;
+	display: flex;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+	margin-top: -20px;
+	width: 100%;
 }
 
 iframe {
 	border: 2px solid white;
 	width: 100%;
+	height: 100%;
 	border-radius: 50px;
 }
 
@@ -126,7 +123,6 @@ iframe {
 	width: 100px;
 	opacity: 20%;
 	top: 0;
-	transition: 0.5s ease;
 }
 
 .fundo-lateral-1{
@@ -155,7 +151,7 @@ span {
 	}
 }	
 
-/*Celular Teste*/
+/*Celular*/
 @media (max-width: 600px) {
 	
 	.fundo-lateral-1, .fundo-lateral-2 {
@@ -179,6 +175,8 @@ span {
 		
 		to {
 			width: 30px;
-		}
+		}	
 	}	
 }
+
+
