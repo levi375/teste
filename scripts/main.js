@@ -7,7 +7,7 @@ let repetições = 0;
 
 function ajustarMenu() {
     if (window.innerWidth <= 600) {
-        icones_visiveis = 4;
+        icones_visiveis = 3;
     } else {
         icones_visiveis = 7;
     }
