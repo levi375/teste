@@ -7,7 +7,7 @@ let repetições = 0;
 
 function ajustarMenu() {
     if (window.innerWidth <= 600) {
-        icones_visiveis = 3;
+        icones_visiveis = 4;
     } else {
         icones_visiveis = 7;
     }
@@ -34,7 +34,19 @@ function esquerda() {
 ajustarMenu();
 window.addEventListener('resize', ajustarMenu);
 
+/*----------------------------------------------------------------------------------------------*/
+const links = document.querySelectorAll('a');
+const opcao = document.querySelector('#opcao');
 
+links.forEach((link, index) => {
+    if (index < links.length - 2) { 
+        link.addEventListener('click', function(event) {
+			opcao.style.visibility = 'visible';
+			opcao.style.opacity = '100%';
+        });
+    }
+});
+	
 /*----------------------------------------------------------------------------------------------*/
 const opcao1 = document.querySelector('#opcao1');
 const opcao2 = document.querySelector('#opcao2');
@@ -48,9 +60,9 @@ const canais = [
     { id: 'fx', embedMax: 'fx.php', reidosCanais: 'fx' },
     { id: 'warnerchannel', embedMax: 'warnertv.php', reidosCanais: 'warnertv' },
     { id: 'comedycentral', embedMax: 'comedycentral.php', reidosCanais: 'comedycentral' },
-    { id: 'sportv1', embedMax: 'sportv1.php', reidosCanais: 'sportv' },
-    { id: 'sportv2', embedMax: 'sportv2.php', reidosCanais: 'sportv2' },
-	{ id: 'sportv3', embedMax: 'sportv3.php', reidosCanais: 'sportv3' },
+    { id: 'sportv1', embedMax: 'sportv1.php', reidosCanais: 'sportvalternativo' },
+    { id: 'sportv2', embedMax: 'sportv2.php', reidosCanais: 'sportv2alternativo' },
+	{ id: 'sportv3', embedMax: 'sportv3.php', reidosCanais: 'sportv3alternativo' },
     { id: 'animalplanet', embedMax: 'animalplanet.php', reidosCanais: 'animalplanet' },
     { id: 'ufcfightpass', embedMax: 'ufcfightpass.php', reidosCanais: 'ufcfightpass' },
 ];
@@ -58,8 +70,10 @@ const canais = [
 canais.forEach(canal => {
     const element = document.querySelector(`#${canal.id}`);
     element.addEventListener('click', function() {
-        opcao1.href = `https://embedmax.site/tvl/${canal.embedMax}`;
-        opcao2.href = `https://reidoscanais.eu/embed/?id=${canal.reidosCanais}`;
+        opcao2.href = `https://embedmax.site/tvl/${canal.embedMax}`;
+        opcao1.href = `https://reidoscanais.eu/embed/?id=${canal.reidosCanais}`;
     });
 });
+
+
 
