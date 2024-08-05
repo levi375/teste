@@ -216,3 +216,9 @@ span {
 }
 
 
+@media (max-height: 600px) {
+	main {
+		height: 70%;
+	}
+	
+}
