@@ -59,6 +59,7 @@ main {
 	border-radius: 50%;
 	position: relative;
 	opacity: 95%;
+	transition: 0.5s ease;
 }
 
 a{
