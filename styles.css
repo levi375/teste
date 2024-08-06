@@ -218,6 +218,12 @@ span {
 		top: revert;
 		bottom: 38px;
 	}
+
+	#opcao {
+		position: absolute;
+		top: 6px;
+		
+	}
 }
 
 
