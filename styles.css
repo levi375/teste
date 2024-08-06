@@ -192,35 +192,17 @@ span {
 /*Celular*/
 @media (max-width: 600px) {
 	
-	.fundo-lateral-1, .fundo-lateral-2 {
-		width: 30px;
-	}
-	
 	.menu-wrapper {
 		width: 320px;
-		
 	}
 	
 	footer{
 		font-size: 14px;
 	}
 	
-	@keyframes deslizar {
-		from {
-			width: 50%;
-			
-		}
-		
-		to {
-			width: 30px;
-		}	
-	}	
-}
-
 
 @media (max-height: 600px) {
 	main {
 		height: 70%;
 	}
-	
 }
