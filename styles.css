@@ -197,12 +197,26 @@ span {
 @media (max-width: 600px) {
 	
 	.menu-wrapper {
-		width: 240px;
+		width: 320px;
 		
 	}
 	
 	footer{
 		font-size: 14px;
+		top: 20px;
+	}
+	
+	.player {
+		width: 100%;
+	}
+	
+	iframe {
+		border-radius: 0;
+	}
+
+	.menu-container {
+		top: revert;
+		bottom: 38px;
 	}
 }
 
