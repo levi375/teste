@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 14" width="18" height="14">
+	<title>abrir-svg</title>
+	<style>
+		.s0 { fill: none;stroke: #ffffff;stroke-linecap: round;stroke-width: 2 } 
+	</style>
+	<g id="SVGRepo_bgCarrier">
+	</g>
+	<g id="SVGRepo_tracerCarrier">
+	</g>
+	<g id="SVGRepo_iconCarrier">
+		<path id="Layer" fill-rule="evenodd" class="s0" d="m1 13h16"/>
+		<path id="Layer" fill-rule="evenodd" class="s0" d="m1 7h16"/>
+		<path id="Layer" fill-rule="evenodd" class="s0" d="m1 1h16"/>
+	</g>
+</svg>
