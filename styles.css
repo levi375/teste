@@ -218,8 +218,7 @@ span {
 	}
 
 	.menu-container {
-		top: revert;
-		bottom: 7px;
+		top: 85%;
 	}
 
 	#opcao {
