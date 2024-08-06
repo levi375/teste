@@ -208,15 +208,18 @@ span {
 	
 	.player {
 		width: 100%;
+		border-top: 2px solid white;
+		border-bottom: 2px solid white;
 	}
 	
 	iframe {
 		border-radius: 0;
+		border: 0;
 	}
 
 	.menu-container {
 		top: revert;
-		bottom: 4.6%;
+		bottom: 4.2%;
 	}
 
 	#opcao {
