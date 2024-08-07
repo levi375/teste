@@ -196,7 +196,7 @@ footer{
   position: absolute;
   background: white;
   display: block;
-  height: 4px;
+  height: 3px;
   width: 30px;
   border-radius: 10px;
   transition: 0.5s ease;
@@ -207,11 +207,11 @@ footer{
 }
 
 #menu2 span::before {
-  top: -10px;
+  top: -8px;
 }
 
 #menu2 span::after {
-  top: 10px;
+  top: 8px;
 }
 
 #menu2.ativo span {
