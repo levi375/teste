@@ -126,7 +126,7 @@ a{
 	justify-content: center;
 	align-items: center;
 	z-index: 100;
-	margin-top: -20px;
+	top: -20px;
 	width: 100%;
 	opacity: 0%;
 	transition: 1s ease;
@@ -219,11 +219,15 @@ span {
 	}
 	
 	.logos {
-		width: 40px;
+		width: 35px;
 	}
 	
 	.menu-container{
 		top: 9px;
+	}
+	
+	#opcao{
+		top: -15px;
 	}
 }
 
