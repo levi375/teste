@@ -179,6 +179,23 @@ span {
 	animation-name: deslizar;
 }
 
+#botaoteste {
+	display: flex;
+	position: absolute;
+	z-index: 1004;
+	margin: 13px;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+	left: 0;
+}
+
+#botaoteste img {
+	display: flex;
+	height: 20px;
+	align-self: center;
+}
+
 @keyframes deslizar {
 	from {
 		width: 100%;
@@ -195,7 +212,7 @@ span {
 @media (max-width: 600px) {
 	
 	.menu-wrapper {
-		width: 240px;
+		width: 270px;
 	}
 	
 	footer{
@@ -213,7 +230,13 @@ span {
 		border: 0;
 	}
 	
-	.menu li, a {
+	.menu li {
+		height: 50px;
+		width: 50px;
+		margin-right: 5px;
+	}
+	
+	a {
 		height: 50px;
 		width: 50px;
 	}
@@ -223,7 +246,7 @@ span {
 	}
 	
 	.menu-container{
-		top: 9px;
+		top: -8px;
 	}
 	
 	#opcao{
@@ -238,6 +261,22 @@ span {
 	.menu-container button img {
 		height: 20px;
 	}
+	
+	#botaoteste img {
+		height: 10px;
+	}
+	
+	#botaoteste {
+		margin: 10px;
+	}
+	
+	header {
+		height: 32px;
+	}
+	
+	.menu {
+		margin: 0;
+	}
 }
 
 
@@ -246,21 +285,4 @@ span {
 		height: 70%;
 	}
 	
-}
-
-#botaoteste {
-	display: flex;
-	position: absolute;
-	z-index: 1004;
-	margin: 13px;
-	border: 0;
-	background-color: transparent;
-	cursor: pointer;
-	left: 0;
-}
-
-#botaoteste img {
-	display: flex;
-	height: 20px;
-	align-self: center;
 }
