@@ -176,21 +176,56 @@ footer{
 	align-items: center;
 }
 
-#botaoteste {
-	display: flex;
-	position: absolute;
-	z-index: 1004;
-	margin: 13px;
-	border: 0;
-	background-color: transparent;
-	cursor: pointer;
-	left: 0;
+#menu2 {
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  height: 47px;
+  width: 50px;
+  cursor: pointer;
+  margin:0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  left: 10px;
+  z-index: 2000;
 }
 
-#botaoteste img {
-	display: flex;
-	height: 20px;
-	align-self: center;
+#menu2 span, #menu2 span::after, #menu2 span::before {
+  position: absolute;
+  background: white;
+  display: block;
+  height: 4px;
+  width: 30px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+#menu2 span::after, #menu2 span::before {
+  content: '';
+}
+
+#menu2 span::before {
+  top: -10px;
+}
+
+#menu2 span::after {
+  top: 10px;
+}
+
+#menu2.ativo span {
+  background: transparent;
+}
+
+#menu2.ativo span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+#menu2.ativo span::after {
+  transform: rotate(-45deg);
+  top: 0;
 }
 
 @keyframes deslizar {
