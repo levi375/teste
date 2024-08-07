@@ -156,6 +156,8 @@ iframe {
 	top: 0;
 	z-index: 1001;
 	pointer-events: none;
+	animation-duration: 3s;
+	animation-name: deslizar;
 }
 
 .fundo-lateral-1{
@@ -172,11 +174,6 @@ footer{
 	color: white;
 	justify-content: center;
 	align-items: center;
-}
-
-span {
-	animation-duration: 3s;
-	animation-name: deslizar;
 }
 
 #botaoteste {
@@ -211,14 +208,6 @@ span {
 /*Celular*/
 @media (max-width: 600px) {
 	
-	.menu-wrapper {
-		width: 270px;
-	}
-	
-	footer{
-		font-size: 14px;
-	}
-	
 	.player {
 		width: 100%;
 		border-top: 2px solid white;
@@ -230,59 +219,7 @@ span {
 		border: 0;
 	}
 	
-	.menu li {
-		height: 50px;
-		width: 50px;
-		margin-right: 5px;
+	.menu-wrapper {
+		width: 240px;
 	}
-	
-	a {
-		height: 50px;
-		width: 50px;
-	}
-	
-	.logos {
-		width: 35px;
-	}
-	
-	.menu-container{
-		top: -8px;
-	}
-	
-	#opcao{
-		top: -15px;
-		font-size: 10px;
-	}
-	
-	.player a {
-		width: 100px;
-	}
-	
-	.menu-container button img {
-		height: 20px;
-	}
-	
-	#botaoteste img {
-		height: 10px;
-	}
-	
-	#botaoteste {
-		margin: 10px;
-	}
-	
-	header {
-		height: 32px;
-	}
-	
-	.menu {
-		margin: 0;
-	}
-}
-
-
-@media (max-height: 600px) {
-	main {
-		height: 70%;
-	}
-	
 }
