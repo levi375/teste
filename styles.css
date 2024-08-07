@@ -228,6 +228,15 @@ span {
 	
 	#opcao{
 		top: -15px;
+		font-size: 13px;
+	}
+	
+	.player a {
+		width: 100px;
+	}
+	
+	.menu-container button img {
+		height: 20px;
 	}
 }
 
