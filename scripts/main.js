@@ -76,19 +76,11 @@ canais.forEach(canal => {
 });
 
 /*----------------------------------------------------------------------------------------------*/
-const botaoteste = document.querySelector("#botaoteste");
-const img_button = botaoteste.querySelector("img");
-const img1 = "images/buttons/abrir.svg";
-const img2 = "images/buttons/fechar.svg";
+const menu2 = document.querySelector("#menu2");
 
+menu2.addEventListener('click', function() {
+  menu2.classList.toggle('ativo');
+  alert('Em construção');
+});
 
-function menu2() {
-    if (img_button.src.includes(img1)){
-		alert("Em construção");
-        img_button.src = img2;
-		
-    } else {
-        img_button.src = img1;
-    }
-}
 
