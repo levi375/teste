@@ -257,4 +257,16 @@ footer{
 	.menu-wrapper {
 		width: 240px;
 	}
+
+	.menu li, a{
+		background: linear-gradient(45deg,  rgba(240,0, 0, 0.8),  rgba(0,0,240,0.8));
+	}
+	
+	.menu-container{
+		top: 9px;
+	}
+	
+	html,body{
+		background: black;
+	}
 }
